@@ -1,0 +1,18 @@
+Tải cả thư mục "saved_data" trong đường link này để chạy được chương trình:
+  https://drive.google.com/drive/folders/1TVsdPv0yYfhgw4uXNkYU-KbTODoV7XVH?usp=sharing
+
+
+File "saved_data" gồm:
+  + Các thư mục có đuôi '.model' lưu thông tin của pretrain model. Sử dụng để dự đoán người topic người dùng tìm kiếm từ đầu vào là id của các từ được nhập vào thanh search
+  + Thư mục 'dictionnary.dict' lưu thông tin chuyển word2id, id2word. Sử dụng để dịch thông tin người dùng tìm kiếm sang id để kiểm tra người dùng muốn tìm kiếm topic nào
+  + thư mục 'topicid_to_ids' để chuyển từ đẩu ra của model là thông tin topic được tìm kiếm sang id các bài báo thuộc topic đó.
+  + thư mục 'sorted_df' lưu thông tin của các bài báo, được sort theo trình tự thời gian mới nhất đến cũ nhất.
+    
+
+
+Source code pretrain model nằm trong đường link này (trong file 'train'):
+  https://drive.google.com/drive/folders/1TVsdPv0yYfhgw4uXNkYU-KbTODoV7XVH?usp=sharing
+
+trong file 'train' gồm:
+  + file 'arxiv-metadata-oai-snapshot.zip' gồm thông tin các bài báo của Axvir lấy trên Kaggle lưu dưới dạng file .json ( https://www.kaggle.com/datasets/Cornell-University/arxiv )                                                                                                                    
+  + file 'train_model.jpynb' lưu source code để train model dựa trên dữ liệu của Axvir. Lưu ý, mỗi lần chạy model có thể sẽ cho ra một kết quả khác nhau.
